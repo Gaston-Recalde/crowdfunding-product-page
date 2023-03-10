@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Commissioner", sans-serif;
+  font-size: 16px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.header {
+  height: 300px;
+  width: 100%;
+  background-image: url("../images/image-hero-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header .nav {
+  width: 88%;
+  margin: 0 auto;
+  padding: 32px 0;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.header .nav .navbar {
+  position: fixed;
+  width: 90%;
+  text-align: center;
+  top: 88px;
+  background-color: #fff;
+  border-radius: 8px;
+  text-align: left;
+}
+.header .nav .navbar ul li {
+  padding: 24px;
+  border-bottom: 1px solid hsl(0, 0%, 48%);
+}
+.header .nav .navbar ul li:last-child {
+  border: none;
+}
+.header .nav .navbar ul li:hover {
+  cursor: pointer;
+  font-weight: 700;
+}
+.header .nav .navbar ul li a {
+  color: hsl(0, 0%, 0%);
+}
+.header .nav__toggle-close {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
