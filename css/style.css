@@ -78,6 +78,7 @@ body {
   width: 88%;
   margin: 0 auto;
   max-width: 900px;
+  padding-bottom: 250px;
 }
 .main .monitor__card {
   position: absolute;
@@ -125,4 +126,40 @@ body {
 }
 .main .monitor__card__buttons__button .button-text {
   display: none;
+}
+.main .number {
+  width: 88%;
+  margin: 0 auto;
+  max-width: 900px;
+  text-align: center;
+  padding: 35px 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.main .number__numbers {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-bottom: 35px;
+}
+.main .number__numbers .total span {
+  font-size: 32px;
+  font-weight: 700;
+}
+.main .number__numbers .total p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: hsl(0, 0%, 48%);
+}
+.main .number .porcentaje {
+  border-radius: 50px;
+  background-color: hsl(0, 0%, 48%);
+  height: 15px;
+  width: 100%;
+}
+.main .number .porcentaje .porce {
+  border-radius: 50px;
+  background-color: hsl(176, 50%, 47%);
+  height: 15px;
+  width: 75%;
 }/*# sourceMappingURL=style.css.map */

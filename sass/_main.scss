@@ -79,6 +79,7 @@
         width: 88%;
         margin: 0 auto;
         max-width: 900px; //Corregir luego
+        padding-bottom: 250px;
 
         &__card{
             position: absolute;
@@ -144,6 +145,52 @@
                         }
                     }
                 }
+            }
+        }
+    }
+
+    .number{
+        // padding-top: 250px;
+        width: 88%;
+        margin: 0 auto;
+        max-width: 900px;
+        text-align: center;
+        padding: 35px 15px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        &__numbers{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            margin-bottom: 35px;
+
+            .total{
+
+                span{
+                    font-size: 32px;
+                    font-weight: 700;
+                    // margin-bottom: 10px;
+                }
+
+                p{
+                    margin-top: 10px;
+                    font-size: 14px;
+                    color: $dark-gray;
+                }
+            }
+        }
+
+        .porcentaje{
+            border-radius: 50px;
+            background-color: $dark-gray; //Cambiar color
+            height: 15px;
+            width: 100%;
+            .porce{
+                border-radius: 50px;
+                background-color: $moderate-cyan;
+                height: 15px;
+                width: 75%;
             }
         }
     }
