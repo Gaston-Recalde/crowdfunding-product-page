@@ -35,15 +35,20 @@ body {
   justify-content: space-between;
   position: relative;
 }
+.header .nav__logo img {
+  position: relative;
+  z-index: 999;
+}
 .header .nav .navbar {
   display: none;
-  position: fixed;
-  width: 90%;
+  position: absolute;
+  width: 100%;
   text-align: center;
   top: 88px;
   background-color: #fff;
   border-radius: 8px;
   text-align: left;
+  box-shadow: 0 100px 0 1300px rgba(0, 0, 0, 0.5);
 }
 .header .nav .navbar ul li {
   padding: 24px;
@@ -58,6 +63,9 @@ body {
 }
 .header .nav .navbar ul li a {
   color: hsl(0, 0%, 0%);
+}
+.header .nav__toggle {
+  z-index: 999;
 }
 .header .nav__toggle-close {
   display: none;

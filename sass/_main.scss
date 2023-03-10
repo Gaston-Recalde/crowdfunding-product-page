@@ -14,19 +14,25 @@
         position: relative;
 
         &__logo{
-
+            
+            img{
+                position: relative;
+                z-index: 999;
+            }
         }
 
         .navbar{
             display: none;
-            position: fixed;
-            width: 90%;
+            position: absolute;
+            width: 100%;
             // margin: 0 auto;
             text-align: center;
             top: 88px;
             background-color: #fff;
             border-radius: 8px;
             text-align: left;
+            // z-index: 999;
+            box-shadow: 0 100px 0 1300px rgba(0, 0, 0, 0.5);
 
             ul{
                 li{
@@ -50,6 +56,7 @@
         }
 
         &__toggle{
+            z-index: 999;
 
             &-open{
 
