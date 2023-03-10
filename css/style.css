@@ -48,25 +48,81 @@ body {
   background-color: #fff;
   border-radius: 8px;
   text-align: left;
+  z-index: 999;
   box-shadow: 0 100px 0 1300px rgba(0, 0, 0, 0.5);
 }
 .header .nav .navbar ul li {
   padding: 24px;
   border-bottom: 1px solid hsl(0, 0%, 48%);
+  font-weight: 500;
 }
 .header .nav .navbar ul li:last-child {
   border: none;
 }
 .header .nav .navbar ul li:hover {
   cursor: pointer;
-  font-weight: 700;
 }
 .header .nav .navbar ul li a {
   color: hsl(0, 0%, 0%);
+  font-size: 18px;
 }
 .header .nav__toggle {
   z-index: 999;
 }
 .header .nav__toggle-close {
+  display: none;
+}
+
+.main .monitor {
+  position: relative;
+  width: 88%;
+  margin: 0 auto;
+  max-width: 900px;
+}
+.main .monitor__card {
+  position: absolute;
+  top: -55px;
+  background-color: white;
+  border-radius: 8px;
+  text-align: center;
+  padding: 50px 19px 35px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.main .monitor__card__logo {
+  position: absolute;
+  top: -30px;
+  left: calc(100% - (50% + 30px));
+}
+.main .monitor__card__h1 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+.main .monitor__card__p {
+  font-size: 15px;
+  color: hsl(0, 0%, 48%);
+  margin-bottom: 25px;
+}
+.main .monitor__card__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .monitor__card__buttons button {
+  background-color: hsl(176, 50%, 47%);
+  padding: 20px 50px;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+}
+.main .monitor__card__buttons button:hover {
+  background-color: hsl(176, 72%, 28%);
+  cursor: pointer;
+}
+.main .monitor__card__buttons__button {
+  display: flex;
+}
+.main .monitor__card__buttons__button .button-text {
   display: none;
 }/*# sourceMappingURL=style.css.map */

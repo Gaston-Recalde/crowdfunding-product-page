@@ -31,13 +31,14 @@
             background-color: #fff;
             border-radius: 8px;
             text-align: left;
-            // z-index: 999;
+            z-index: 999;
             box-shadow: 0 100px 0 1300px rgba(0, 0, 0, 0.5);
 
             ul{
                 li{
                     padding: 24px;
                     border-bottom: 1px solid $dark-gray;
+                    font-weight: 500;
 
                     &:last-child{
                         border: none;
@@ -45,11 +46,12 @@
 
                     &:hover{
                         cursor: pointer;
-                        font-weight: 700;
+                        // font-weight: 700;
                     }
 
                     a{
                         color: $black;
+                        font-size: 18px;
                     }
                 }
             }
@@ -64,6 +66,84 @@
 
             &-close{
                 display: none;
+            }
+        }
+    }
+}
+
+.main{
+    // position: relative;
+
+    .monitor{
+        position: relative;
+        width: 88%;
+        margin: 0 auto;
+        max-width: 900px; //Corregir luego
+
+        &__card{
+            position: absolute;
+            top: -55px;
+            background-color: white;
+            border-radius: 8px;
+            text-align: center;
+            padding: 50px 19px 35px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+            &__logo{
+                position: absolute;
+                top: -30px;
+                left: calc(100% - (50% + 30px));
+            }
+
+            &__h1{
+                font-size: 22px;
+                margin-bottom: 15px;
+            }
+
+            &__p{
+                font-size: 15px;
+                color: $dark-gray;
+                margin-bottom: 25px;
+            }
+
+            &__buttons{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                button{
+                    background-color: $moderate-cyan;
+                    padding: 20px 50px;
+                    color: white;
+                    border: none;
+                    border-radius: 50px;
+                    font-weight: 700;
+                    letter-spacing: 1.1px;
+
+                    &:hover{
+                        background-color: $dark-cyan;
+                        cursor: pointer;
+                    }
+                }
+
+                &__button{
+                    display: flex;
+
+                    .button{
+
+                        img{
+
+                        }
+                    }
+
+                    .button-text{
+                        display: none;
+
+                        p{
+
+                        }
+                    }
+                }
             }
         }
     }
