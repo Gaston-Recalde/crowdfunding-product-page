@@ -32,7 +32,7 @@
             border-radius: 8px;
             text-align: left;
             z-index: 999;
-            box-shadow: 0 100px 0 1300px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 100px 0 2500px rgba(0, 0, 0, 0.5);
 
             ul{
                 li{
@@ -84,6 +84,7 @@
         &__card{
             position: absolute;
             top: -55px;
+            width: 100%;
             background-color: white;
             border-radius: 8px;
             text-align: center;
@@ -224,17 +225,20 @@
             border-radius: 8px;
             padding: 24px;
 
-            &__title{
-                font-weight: 700;
-                font-size: 15px;
-                margin-bottom: 10px;
-            }
+            &__titles{
 
-            &__price{
-                color: $moderate-cyan;
-                font-size: 14px;
-                font-weight: 500;
-                margin-bottom: 25px;
+                &__title{
+                    font-weight: 700;
+                    font-size: 15px;
+                    margin-bottom: 10px;
+                }
+    
+                &__price{
+                    color: $moderate-cyan;
+                    font-size: 14px;
+                    font-weight: 500;
+                    margin-bottom: 25px;
+                }
             }
 
             &__p{
@@ -244,41 +248,47 @@
                 margin-bottom: 25px;
             }
 
-            &__left{
+            &__options{
                 display: flex;
-                align-items: center;
-                color: $dark-gray;
-                font-size: 14px;
-                margin-bottom: 25px;
+                flex-direction: column;
 
-                span{
-                    font-weight: 700;
-                    font-size: 32px;
-                    margin-right: 10px;
-                    color: $black;
+                &__left{
+                    display: flex;
+                    align-items: center;
+                    color: $dark-gray;
+                    font-size: 14px;
+                    margin-bottom: 25px;
+    
+                    span{
+                        font-weight: 700;
+                        font-size: 32px;
+                        margin-right: 10px;
+                        color: $black;
+                    }
                 }
-            }
-
-            &__button{
-                background-color: $moderate-cyan;
-                padding: 15px 30px;
-                color: white;
-                border: none;
-                border-radius: 50px;
-                font-weight: 700;
-                font-size: 12px;
-                letter-spacing: 1.1px;
-
-                &:hover{
-                    background-color: $dark-cyan;
-                    cursor: pointer;
+    
+                &__button{
+                    width: 160px;
+                    background-color: $moderate-cyan;
+                    padding: 15px 30px;
+                    color: white;
+                    border: none;
+                    border-radius: 50px;
+                    font-weight: 700;
+                    font-size: 12px;
+                    letter-spacing: 1.1px;
+    
+                    &:hover{
+                        background-color: $dark-cyan;
+                        cursor: pointer;
+                    }
                 }
             }
 
             &:last-child{
                 opacity: .5;
 
-                .about__card__button{
+                .about__card__options__button{
                     background-color: $dark-gray;
                 }
             }
