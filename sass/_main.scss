@@ -183,7 +183,7 @@
 
         .porcentaje{
             border-radius: 50px;
-            background-color: $dark-gray; //Cambiar color
+            background-color: $dark-gray-2;
             height: 15px;
             width: 100%;
             .porce{
@@ -191,6 +191,96 @@
                 background-color: $moderate-cyan;
                 height: 15px;
                 width: 75%;
+            }
+        }
+    }
+
+    .about{
+        width: 88%;
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 100px;
+        max-width: 900px;
+        text-align: left;
+        padding: 35px 26px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        &__h2{
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        &__p{
+            color: $dark-gray;
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 25px;
+        }
+
+        &__card{
+            margin-bottom: 15px;
+            border: 1px solid $dark-gray;
+            border-radius: 8px;
+            padding: 24px;
+
+            &__title{
+                font-weight: 700;
+                font-size: 15px;
+                margin-bottom: 10px;
+            }
+
+            &__price{
+                color: $moderate-cyan;
+                font-size: 14px;
+                font-weight: 500;
+                margin-bottom: 25px;
+            }
+
+            &__p{
+                color: $dark-gray;
+                font-size: 14px;
+                line-height: 1.5;
+                margin-bottom: 25px;
+            }
+
+            &__left{
+                display: flex;
+                align-items: center;
+                color: $dark-gray;
+                font-size: 14px;
+                margin-bottom: 25px;
+
+                span{
+                    font-weight: 700;
+                    font-size: 32px;
+                    margin-right: 10px;
+                    color: $black;
+                }
+            }
+
+            &__button{
+                background-color: $moderate-cyan;
+                padding: 15px 30px;
+                color: white;
+                border: none;
+                border-radius: 50px;
+                font-weight: 700;
+                font-size: 12px;
+                letter-spacing: 1.1px;
+
+                &:hover{
+                    background-color: $dark-cyan;
+                    cursor: pointer;
+                }
+            }
+
+            &:last-child{
+                opacity: .5;
+
+                .about__card__button{
+                    background-color: $dark-gray;
+                }
             }
         }
     }
