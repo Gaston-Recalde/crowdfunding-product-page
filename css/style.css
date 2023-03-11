@@ -252,7 +252,7 @@ body {
     height: 400px;
   }
   .main .monitor {
-    max-width: 900px;
+    max-width: 735px;
   }
   .main .monitor__card {
     padding: 50px 40px 35px;
@@ -285,6 +285,15 @@ body {
   }
   .main .number__numbers {
     flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+  .main .number__numbers .total {
+    width: 33%;
+    border-right: 1px solid hsl(0, 0%, 90%);
+  }
+  .main .number__numbers .total:last-child {
+    border-right: none;
   }
   .main .about {
     padding: 50px 40px;
@@ -309,6 +318,77 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+  .main .about__card__options__left {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header {
+    height: 400px;
+    background-image: url("../images/image-hero-desktop.jpg");
+  }
+  .header .nav {
+    width: 88%;
+    max-width: 1200px;
+  }
+  .header .nav .navbar {
+    display: flex;
+    flex-direction: row;
+    position: inherit;
+    width: auto;
+    text-align: center;
+    top: 0;
+    background-color: transparent;
+    border-radius: 0;
+    text-align: inherit;
+    box-shadow: none;
+  }
+  .header .nav .navbar ul {
+    display: flex;
+    gap: 25px;
+  }
+  .header .nav .navbar ul li {
+    padding: 0;
+    border-bottom: none;
+    font-weight: 500;
+  }
+  .header .nav .navbar ul li a {
+    color: white;
+  }
+  .header .nav__toggle {
+    display: none;
+  }
+  .main .monitor {
+    max-width: 735px;
+  }
+  .main .monitor__card {
+    padding: 50px 40px 35px;
+  }
+  .main .monitor__card__h1 {
+    font-size: 28px;
+  }
+  .main .monitor__card__p {
+    font-size: 16px;
+  }
+  .main .number {
+    max-width: 735px;
+  }
+  .main .about {
+    max-width: 735px;
+    padding: 50px 50px;
+  }
+  .main .about__h2 {
+    font-size: 26px;
+  }
+  .main .about__p {
+    color: hsl(0, 0%, 48%);
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+  }
+  .main .about__card__p {
+    font-size: 16px;
   }
   .main .about__card__options__left {
     margin-bottom: 0;
