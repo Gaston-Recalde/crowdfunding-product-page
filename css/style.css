@@ -77,7 +77,7 @@ body {
   position: relative;
   width: 88%;
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 735px;
   padding-bottom: 250px;
 }
 .main .monitor__card {
@@ -125,13 +125,18 @@ body {
 .main .monitor__card__buttons__button {
   display: flex;
 }
+.main .monitor__card__buttons__button .button {
+  background-image: url("../images/icon-bookmark.svg");
+  width: 56px;
+  height: 56px;
+}
 .main .monitor__card__buttons__button .button-text {
   display: none;
 }
 .main .number {
   width: 88%;
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 735px;
   text-align: center;
   padding: 35px 15px;
   border-radius: 8px;
@@ -169,7 +174,7 @@ body {
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 100px;
-  max-width: 900px;
+  max-width: 735px;
   text-align: left;
   padding: 35px 26px;
   border-radius: 8px;
@@ -370,6 +375,29 @@ body {
   }
   .main .monitor__card__p {
     font-size: 16px;
+  }
+  .main .monitor__card__buttons__button {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: hsl(0, 0%, 90%);
+    border-radius: 50px;
+    padding: 0 25px 0 0;
+    height: 56px;
+  }
+  .main .monitor__card__buttons__button:hover {
+    background-color: white;
+  }
+  .main .monitor__card__buttons__button:hover .button {
+    background-image: url("../images/icon-bookmark-hover.svg");
+  }
+  .main .monitor__card__buttons__button:hover .button-text {
+    color: hsl(176, 72%, 28%);
+  }
+  .main .monitor__card__buttons__button .button {
+    width: 56px;
+    height: 56px;
+    padding-top: 2px;
   }
   .main .number {
     max-width: 735px;

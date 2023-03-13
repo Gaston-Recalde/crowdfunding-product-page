@@ -1,0 +1,273 @@
+@media screen and (min-width:1024px) {
+    .header{
+        height: 400px;
+        background-image: url('../images/image-hero-desktop.jpg');
+    
+        .nav{
+            width: 88%;
+            max-width: 1200px;
+    
+            .navbar{
+                display: flex;
+                flex-direction: row;
+                position: inherit;
+                width: auto;
+                // margin: 0 auto;
+                text-align: center;
+                top: 0;
+                background-color: transparent;
+                border-radius: 0;
+                text-align: inherit;
+                // z-index: 999;
+                box-shadow: none;
+    
+                ul{
+                    display: flex;
+                    gap: 25px;
+
+                    li{
+                        padding: 0;
+                        border-bottom: none;
+                        font-weight: 500;
+    
+                        // &:last-child{
+                        //     border: none;
+                        // }
+    
+                        // &:hover{
+                        //     cursor: pointer;
+                        // }
+    
+                        a{
+                            color: white;
+                            // font-size: 18px;
+                        }
+                    }
+                }
+            }
+    
+            &__toggle{
+                display: none;
+            }
+        }
+    }
+    
+    .main{
+        // position: relative;
+    
+        .monitor{
+            // position: relative;
+            // width: 88%;
+            // margin: 0 auto;
+            max-width: 735px;
+            // padding-bottom: 250px;
+    
+            &__card{
+                // position: absolute;
+                // top: -55px;
+                // width: 100%;
+                // background-color: white;
+                // border-radius: 8px;
+                // text-align: center;
+                padding: 50px 40px 35px;
+                // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+                // &__logo{
+                //     position: absolute;
+                //     top: -30px;
+                //     left: calc(100% - (50% + 30px));
+                // }
+    
+                &__h1{
+                    font-size: 28px;
+                    // margin-bottom: 15px;
+                }
+    
+                &__p{
+                    font-size: 16px;
+                //     color: $dark-gray;
+                //     margin-bottom: 25px;
+                }
+    
+                &__buttons{
+    
+                    // button{
+                    //     padding: 20px 40px;
+                    // }
+    
+                    &__button{
+                        display: flex;
+                        align-items: center;
+                        gap: 15px;
+                        background-color: $dark-gray-2;
+                        border-radius: 50px;
+                        padding: 0 25px 0 0;
+                        height: 56px;
+
+                        &:hover{
+                            background-color: white;
+
+                            .button{
+                                background-image: url('../images/icon-bookmark-hover.svg');
+                            }
+
+                            .button-text{
+                                color: $dark-cyan;
+                            }
+                        }
+
+                        .button{
+                            width: 56px;
+                            height: 56px;
+                            padding-top: 2px;
+                        }
+    
+                        // .button-text{
+                        //     display: inline-block;
+                        //     color: $dark-gray;
+                        //     font-weight: 700;
+                        // }
+                    }
+                }
+            }
+        }
+    
+        .number{
+            // padding-top: 250px;
+            // width: 88%;
+            // margin: 0 auto;
+            max-width: 735px;
+            // text-align: center;
+            // padding: 50px 40px;
+            // border-radius: 8px;
+            // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+            // &__numbers{
+                // display: flex;
+                // flex-direction: row;
+                // gap: 50px;
+                // margin-bottom: 35px;
+    
+                // .total{
+    
+                    // span{
+                        // font-size: 32px;
+                        // font-weight: 700;
+                        // margin-bottom: 10px;
+                    // }
+    
+                    // p{
+                        // margin-top: 10px;
+                        // font-size: 14px;
+                        // color: $dark-gray;
+                    // }
+                // }
+            // }
+    
+            // .porcentaje{
+            //     border-radius: 50px;
+            //     background-color: $dark-gray-2;
+            //     height: 15px;
+            //     width: 100%;
+            //     .porce{
+            //         border-radius: 50px;
+            //         background-color: $moderate-cyan;
+            //         height: 15px;
+            //         width: 75%;
+            //     }
+            // }
+        }
+    
+        .about{
+            // width: 88%;
+            // margin: 0 auto;
+            // margin-top: 30px;
+            // margin-bottom: 100px;
+            max-width: 735px;
+            // text-align: left;
+            padding: 50px 50px;
+            // border-radius: 8px;
+            // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+            &__h2{
+                font-size: 26px;
+                // margin-bottom: 20px;
+            }
+    
+            &__p{
+                color: $dark-gray;
+                font-size: 14px;
+                line-height: 1.5;
+                margin-bottom: 25px;
+            }
+    
+            &__card{
+                // margin-bottom: 15px;
+                // border: 1px solid $dark-gray;
+                // border-radius: 8px;
+                // padding: 28px;
+    
+                // &__titles{
+                    // display: flex;
+                    // justify-content: space-between;
+    
+                    // &__title{
+                    //     font-weight: 700;
+                    //     font-size: 15px;
+                    //     margin-bottom: 10px;
+                    // }
+        
+                    // &__price{
+                    //     color: $moderate-cyan;
+                    //     font-size: 14px;
+                    //     font-weight: 500;
+                    //     margin-bottom: 25px;
+                    // }
+                // }
+    
+                &__p{
+                    // color: $dark-gray;
+                    font-size: 16px;
+                    // line-height: 1.8;
+                    // margin-bottom: 25px;
+                }
+    
+                &__options{
+                    // display: flex;
+                    // flex-direction: row;
+                    // align-items: center;
+                    // justify-content: space-between;
+    
+                    &__left{
+                        margin-bottom: 0;
+                    }
+        
+                    // &__button{
+                    //     width: 160px;
+                    //     background-color: $moderate-cyan;
+                    //     padding: 15px 30px;
+                    //     color: white;
+                    //     border: none;
+                    //     border-radius: 50px;
+                    //     font-weight: 700;
+                    //     font-size: 12px;
+                    //     letter-spacing: 1.1px;
+        
+                    //     &:hover{
+                    //         background-color: $dark-cyan;
+                    //         cursor: pointer;
+                    //     }
+                    // }
+                }
+    
+                // &:last-child{
+                //     opacity: .5;
+    
+                //     .about__card__options__button{
+                //         background-color: $dark-gray;
+                //     }
+                // }
+            }
+        }
+    }
+}

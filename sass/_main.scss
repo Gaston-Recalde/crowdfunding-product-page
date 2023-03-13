@@ -78,7 +78,7 @@
         position: relative;
         width: 88%;
         margin: 0 auto;
-        max-width: 900px; //Corregir luego
+        max-width: 735px; //Corregir luego
         padding-bottom: 250px;
 
         &__card{
@@ -132,18 +132,13 @@
                     display: flex;
 
                     .button{
-
-                        img{
-
-                        }
+                        background-image: url('../images/icon-bookmark.svg');
+                        width: 56px;
+                        height: 56px;
                     }
 
                     .button-text{
                         display: none;
-
-                        p{
-
-                        }
                     }
                 }
             }
@@ -154,7 +149,7 @@
         // padding-top: 250px;
         width: 88%;
         margin: 0 auto;
-        max-width: 900px;
+        max-width: 735px;
         text-align: center;
         padding: 35px 15px;
         border-radius: 8px;
@@ -201,7 +196,7 @@
         margin: 0 auto;
         margin-top: 30px;
         margin-bottom: 100px;
-        max-width: 900px;
+        max-width: 735px;
         text-align: left;
         padding: 35px 26px;
         border-radius: 8px;
