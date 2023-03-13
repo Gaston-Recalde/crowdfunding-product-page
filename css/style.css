@@ -130,8 +130,17 @@ body {
   width: 56px;
   height: 56px;
 }
+.main .monitor__card__buttons__button .button-2 {
+  background-image: url("../images/icon-bookmark-hover.svg");
+  width: 56px;
+  height: 56px;
+}
 .main .monitor__card__buttons__button .button-text {
   display: none;
+}
+.main .monitor__card__buttons__button .button-text-2 {
+  display: none;
+  color: hsl(176, 72%, 28%);
 }
 .main .number {
   width: 88%;
@@ -285,6 +294,11 @@ body {
     color: hsl(0, 0%, 48%);
     font-weight: 700;
   }
+  .main .monitor__card__buttons__button .button-text-2 {
+    display: inline-block;
+    color: hsl(176, 72%, 28%);
+    font-weight: 700;
+  }
   .main .number {
     padding: 50px 40px;
   }
@@ -384,15 +398,6 @@ body {
     border-radius: 50px;
     padding: 0 25px 0 0;
     height: 56px;
-  }
-  .main .monitor__card__buttons__button:hover {
-    background-color: white;
-  }
-  .main .monitor__card__buttons__button:hover .button {
-    background-image: url("../images/icon-bookmark-hover.svg");
-  }
-  .main .monitor__card__buttons__button:hover .button-text {
-    color: hsl(176, 72%, 28%);
   }
   .main .monitor__card__buttons__button .button {
     width: 56px;

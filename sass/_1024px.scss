@@ -104,17 +104,17 @@
                         padding: 0 25px 0 0;
                         height: 56px;
 
-                        &:hover{
-                            background-color: white;
+                        // &:hover{
+                        //     background-color: white;
 
-                            .button{
-                                background-image: url('../images/icon-bookmark-hover.svg');
-                            }
+                        //     .button{
+                        //         background-image: url('../images/icon-bookmark-hover.svg');
+                        //     }
 
-                            .button-text{
-                                color: $dark-cyan;
-                            }
-                        }
+                        //     .button-text{
+                        //         color: $dark-cyan;
+                        //     }
+                        // }
 
                         .button{
                             width: 56px;

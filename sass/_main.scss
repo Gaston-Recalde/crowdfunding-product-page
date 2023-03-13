@@ -137,8 +137,19 @@
                         height: 56px;
                     }
 
+                    .button-2{
+                        background-image: url('../images/icon-bookmark-hover.svg');
+                        width: 56px;
+                        height: 56px;
+                    }
+
                     .button-text{
                         display: none;
+                    }
+
+                    .button-text-2{
+                        display: none;
+                        color: $dark-cyan;
                     }
                 }
             }
@@ -146,7 +157,6 @@
     }
 
     .number{
-        // padding-top: 250px;
         width: 88%;
         margin: 0 auto;
         max-width: 735px;
