@@ -261,6 +261,166 @@ body {
   background-color: hsl(0, 0%, 48%);
 }
 
+.modal__project {
+  display: none;
+  position: absolute;
+  top: 55px;
+  left: 6%;
+  width: 88%;
+  max-width: 735px;
+  border-radius: 8px;
+  background-color: white;
+  padding: 30px;
+  box-shadow: 0 100px 0 2500px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+.modal__project .project__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.modal__project .project__title .project__h2 {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+}
+.modal__project .project__title .project__close {
+  display: inline-block;
+}
+.modal__project .project__p {
+  color: hsl(0, 0%, 48%);
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+.modal__project .project__card {
+  border: 1px solid hsl(0, 0%, 90%);
+  border-radius: 8px;
+  margin-bottom: 35px;
+  padding: 25px;
+}
+.modal__project .project__card__option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+  gap: 25px;
+}
+.modal__project .project__card__option input {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-right: 16px;
+}
+.modal__project .project__card__option input::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: white;
+  border: 1px solid rgba(81, 87, 87, 0.7333333333);
+  border-radius: 100%;
+}
+.modal__project .project__card__option input::after {
+  display: none;
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 14px;
+  top: 4px;
+  left: 4px;
+  background-color: hsl(176, 50%, 47%);
+  border-radius: 100%;
+}
+.modal__project .project__card__option input:checked::after {
+  display: block;
+}
+.modal__project .project__card__option .option__h3 {
+  display: inline-block;
+  font-size: 16px;
+}
+.modal__project .project__card__option .option__span {
+  color: hsl(176, 50%, 47%);
+  font-size: 15px;
+}
+.modal__project .project__card__p {
+  font-size: 16px;
+  color: hsl(0, 0%, 48%);
+  margin-bottom: 25px;
+}
+.modal__project .project__card__left {
+  margin-bottom: 25px;
+}
+.modal__project .project__card__left p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: hsl(0, 0%, 48%);
+  font-size: 14px;
+}
+.modal__project .project__card__left p span {
+  color: hsl(0, 0%, 0%);
+  font-size: 24px;
+  font-weight: 700;
+}
+.modal__project .project__card .enter-pledge {
+  grid-column: 1/-1;
+  margin-top: 3rem;
+  border-top: 1px solid #dbdbdb;
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.modal__project .project__card .enter-pledge .enter-group {
+  display: flex;
+}
+.modal__project .project__card .enter-pledge .input-pledge {
+  width: 10rem;
+  margin-right: 2rem;
+}
+.modal__project .project__card .enter-pledge .input {
+  margin-left: auto;
+}
+.modal__project .project__card .enter-pledge p {
+  margin: 0;
+}
+.modal__project .project__card .input {
+  position: relative;
+}
+.modal__project .project__card .input-pledge {
+  padding: 2rem 3rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  border-radius: 100px;
+  border: 1px solid #dbdbdb;
+  width: 15rem;
+  position: relative;
+  display: block;
+}
+.modal__project .project__card .input-pledge:focus,
+.modal__project .project__card .input-pledge:active,
+.modal__project .project__card .input-pledge:focus-visible {
+  border: 1px solid #3cb4ac;
+  outline: none;
+  position: relative;
+  display: block;
+}
+.modal__project .project__card .dollar-sign {
+  position: absolute;
+  content: "";
+  top: 41%;
+  left: 1.5rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  transform: translate(0, -25%);
+  color: #808080;
+}
+.modal__project .project__card.project__card-2 {
+  border: 1px solid hsl(176, 50%, 47%);
+}
+
 @media screen and (min-width: 768px) {
   .header {
     height: 400px;
@@ -340,6 +500,11 @@ body {
   }
   .main .about__card__options__left {
     margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 836px) {
+  .modal__project {
+    left: calc(100% - (50% + 367.5px));
   }
 }
 @media screen and (min-width: 1024px) {
