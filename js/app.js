@@ -21,14 +21,13 @@ const bookmark = document.querySelector('.button');
 const bookmarkText = document.querySelector('.button-text');
 const optionsButtons = document.querySelectorAll('.about__card__options__button');
 
-// Agregar el modal de complete
-// boton del modal complete
+const modalComplete = document.querySelector('.modal__complete');
+const modalCompleteClose = document.querySelector('.modal__complete__button');
 
 const modalProject = document.querySelector('.modal__project');
 const modalClose = document.querySelector('.project__close__img');
 const inputs = document.querySelectorAll('.option__radio');
 const optionTitles = document.querySelectorAll('.option__h3');
-// const pays = document.querySelectorAll('.pay');
 
 project.addEventListener('click', () => {
     modalProject.style.display = 'block';
@@ -38,7 +37,6 @@ modalClose.addEventListener('click', () => {
     modalProject.style.display = 'none';
 });
 
-// Modificar el event y colocarlo en el div que contiene el logo y texto
 bookmark.addEventListener('click', () => {
     if(bookmark.className === 'button'){
         bookmark.className = 'button-2';
@@ -51,26 +49,15 @@ bookmark.addEventListener('click', () => {
     }
 });
 
-// inputs.forEach(input => {
-//     input.addEventListener('click', () => {
-        
-//         const pay = document.querySelector('.pay');
-//         if(pay.className === 'pay'){
-//             pay.className = 'pay-active';
-//         } else {
-//             pay.className = 'pay-active';
-//         }
-//     });
-// });
-
 optionsButtons.forEach((btn) => {
     btn.addEventListener('click', () => {
-        // Agregar modal complete que se muestre
+        modalComplete.style.display = 'flex';
     });
 });
 
-// boton modal complete addEventListener
-// Cerrar el modal complete
+modalCompleteClose.addEventListener('click', () => {
+    modalComplete.style.display = 'none';
+});
 
 inputs.forEach((btn) => {
     btn.addEventListener('click', () => {
@@ -86,8 +73,8 @@ optionTitles.forEach((title) => {
                 .closest('.project__card')
                 .querySelector('.option__radio');
             radioBtn.checked = true;
-            removeAllColorBorders(heading);
-            addColorBorders(heading);
+            removeAllColorBorders(title);
+            addColorBorders(title);
         }
     });
 });
@@ -123,12 +110,7 @@ const addPleadgeForm = (rootElement) => {
         <p>Enter your pledge</p>
         <div class="enter-group">
             <label class="input" for="radio-btn-2-id">
-                <input
-                class="input-pledge"
-                type="number"
-                id="radio-btn-2-id"
-                name="stand-type"
-                />
+                <input class="input-pledge" type="number" id="radio-btn-2-id" name="stand-type" />
                 <span class="dollar-sign">$</span>
             </label>
             <button class="btn">Continue</button>
@@ -140,11 +122,11 @@ const addPleadgeForm = (rootElement) => {
     continueBtn.addEventListener('click', (event) => {
         const leftNumber = event.target
             .closest('.project__card')
-            .querySelector('.left-number');
+            .querySelector('.project__card__left p span');
         let number = +leftNumber.innerHTML;
         leftNumber.innerHTML = --number;
 
         modalProject.style.display = 'none';
-        modalComplete.classList.add('show'); //No creado, el modal complete
+        modalComplete.style.display = 'flex';
     });
 };
