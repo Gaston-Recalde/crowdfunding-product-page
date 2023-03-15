@@ -270,4 +270,22 @@
             }
         }
     }
+    .modal__complete{
+        padding: 55px;
+    
+        &__success{
+    
+            img{
+                width: 80px;
+            }
+        }
+    
+        &__h3{
+            font-size: 24px;
+        }
+    
+        &__p{
+            line-height: 1.8;
+        }
+    }
 }

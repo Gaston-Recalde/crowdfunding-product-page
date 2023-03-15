@@ -307,13 +307,13 @@ body {
   margin-bottom: 15px;
   gap: 25px;
 }
-.modal__project .project__card__option input {
+.modal__project .project__card__option .radio__btn .option__radio {
   position: relative;
   width: 20px;
   height: 20px;
   margin-right: 16px;
 }
-.modal__project .project__card__option input::before {
+.modal__project .project__card__option .radio__btn .option__radio::before {
   position: absolute;
   content: "";
   width: 20px;
@@ -322,7 +322,7 @@ body {
   border: 1px solid rgba(81, 87, 87, 0.7333333333);
   border-radius: 100%;
 }
-.modal__project .project__card__option input::after {
+.modal__project .project__card__option .radio__btn .option__radio::after {
   display: none;
   position: absolute;
   content: "";
@@ -333,7 +333,7 @@ body {
   background-color: hsl(176, 50%, 47%);
   border-radius: 100%;
 }
-.modal__project .project__card__option input:checked::after {
+.modal__project .project__card__option .radio__btn .option__radio:focus::after {
   display: block;
 }
 .modal__project .project__card__option .option__h3 {
@@ -392,6 +392,7 @@ body {
   width: 100%;
   max-width: 150px;
   padding: 8px;
+  padding-left: 30px;
 }
 .modal__project .project__card .enter-pledge .enter-group .input .input-pledge:focus,
 .modal__project .project__card .enter-pledge .enter-group .input .input-pledge:active,
@@ -425,14 +426,18 @@ body {
 .modal__project .project__card-2 {
   border: 1px solid hsl(176, 50%, 47%);
 }
+.modal__project .disabled {
+  opacity: 40%;
+}
 
 .modal__complete {
   display: none;
-  position: absolute;
-  top: 55px;
-  left: 6%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 88%;
-  max-width: 735px;
+  max-width: 550px;
   border-radius: 8px;
   background-color: white;
   padding: 30px;
@@ -631,5 +636,17 @@ body {
   }
   .main .about__card__options__left {
     margin-bottom: 0;
+  }
+  .modal__complete {
+    padding: 55px;
+  }
+  .modal__complete__success img {
+    width: 80px;
+  }
+  .modal__complete__h3 {
+    font-size: 24px;
+  }
+  .modal__complete__p {
+    line-height: 1.8;
   }
 }/*# sourceMappingURL=style.css.map */

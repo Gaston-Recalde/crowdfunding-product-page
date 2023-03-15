@@ -352,36 +352,39 @@
             margin-bottom: 15px;
             gap: 25px;
 
-            input{
-                position: relative;
-                width: 20px;
-                height: 20px;
-                margin-right: 16px;
+            .radio__btn{
 
-                &::before{
-                    position: absolute;
-                    content: "";
+                .option__radio{
+                    position: relative;
                     width: 20px;
                     height: 20px;
-                    background: white;
-                    border: 1px solid #515757bb;
-                    border-radius: 100%;
-                }
-
-                &::after{
-                    display: none;
-                    position: absolute;
-                    content: "";
-                    width: 14px;
-                    height: 14px;
-                    top: 4px;
-                    left: 4px;
-                    background-color: $moderate-cyan;
-                    border-radius: 100%;
-                }
-
-                &:checked::after {
-                    display: block;
+                    margin-right: 16px;
+    
+                    &::before{
+                        position: absolute;
+                        content: "";
+                        width: 20px;
+                        height: 20px;
+                        background: white;
+                        border: 1px solid #515757bb;
+                        border-radius: 100%;
+                    }
+    
+                    &::after{
+                        display: none;
+                        position: absolute;
+                        content: "";
+                        width: 14px;
+                        height: 14px;
+                        top: 4px;
+                        left: 4px;
+                        background-color: $moderate-cyan;
+                        border-radius: 100%;
+                    }
+    
+                    &:focus::after {
+                        display: block;
+                    }
                 }
             }
 
@@ -451,6 +454,7 @@
                         width: 100%;
                         max-width: 150px;
                         padding: 8px;
+                        padding-left: 30px;
                     }
 
                     .input-pledge:focus,
@@ -496,15 +500,21 @@
         border: 1px solid $moderate-cyan;
     }
 
+    .disabled{
+        opacity: 40%;
+    }
+
 }
 
 .modal__complete{
     display: none;
-    position: absolute;
-    top: 55px;
-    left: 6%;
+    // position: absolute;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 88%;
-    max-width: 735px;
+    max-width: 550px;
     border-radius: 8px;
     background-color: white;
     padding: 30px;

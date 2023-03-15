@@ -123,8 +123,8 @@ const addPleadgeForm = (rootElement) => {
         const leftNumber = event.target
             .closest('.project__card')
             .querySelector('.project__card__left p span');
-        let number = +leftNumber.innerHTML;
-        leftNumber.innerHTML = --number;
+        // let number = +leftNumber.innerHTML;
+        // leftNumber.innerHTML = --number;
 
         modalProject.style.display = 'none';
         modalComplete.style.display = 'flex';
