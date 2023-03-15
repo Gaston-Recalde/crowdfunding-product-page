@@ -14,8 +14,6 @@ close.addEventListener('click', () => {
     menu.style.display = 'none';
 });
 
-
-
 const project = document.querySelector('.project');
 const bookmark = document.querySelector('.button');
 const bookmarkText = document.querySelector('.button-text');
@@ -123,8 +121,6 @@ const addPleadgeForm = (rootElement) => {
         const leftNumber = event.target
             .closest('.project__card')
             .querySelector('.project__card__left p span');
-        // let number = +leftNumber.innerHTML;
-        // leftNumber.innerHTML = --number;
 
         modalProject.style.display = 'none';
         modalComplete.style.display = 'flex';

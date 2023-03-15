@@ -547,6 +547,12 @@ body {
   .main .about__card__options__left {
     margin-bottom: 0;
   }
+  .modal__complete__h3 {
+    font-size: 24px;
+  }
+  .modal__complete__p {
+    line-height: 1.8;
+  }
 }
 @media screen and (min-width: 836px) {
   .modal__project {
@@ -563,7 +569,7 @@ body {
     max-width: 1200px;
   }
   .header .nav .navbar {
-    display: flex;
+    display: flex !important;
     flex-direction: row;
     position: inherit;
     width: auto;
@@ -642,11 +648,5 @@ body {
   }
   .modal__complete__success img {
     width: 80px;
-  }
-  .modal__complete__h3 {
-    font-size: 24px;
-  }
-  .modal__complete__p {
-    line-height: 1.8;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -25,7 +25,6 @@
             display: none;
             position: absolute;
             width: 100%;
-            // margin: 0 auto;
             text-align: center;
             top: 88px;
             background-color: #fff;
@@ -46,7 +45,6 @@
 
                     &:hover{
                         cursor: pointer;
-                        // font-weight: 700;
                     }
 
                     a{
@@ -60,10 +58,6 @@
         &__toggle{
             z-index: 999;
 
-            &-open{
-
-            }
-
             &-close{
                 display: none;
             }
@@ -72,13 +66,12 @@
 }
 
 .main{
-    // position: relative;
 
     .monitor{
         position: relative;
         width: 88%;
         margin: 0 auto;
-        max-width: 735px; //Corregir luego
+        max-width: 735px;
         padding-bottom: 250px;
 
         &__card{
@@ -176,7 +169,6 @@
                 span{
                     font-size: 32px;
                     font-weight: 700;
-                    // margin-bottom: 10px;
                 }
 
                 p{
@@ -442,10 +434,8 @@
                     position: relative;
                     width: 40%;
                     max-width: 150px;
-                    // padding: 4px;
 
                     .input-pledge {
-                        // position: relative;
                         display: block;
                         font-weight: 700;
                         font-size: 24px;
@@ -490,9 +480,6 @@
                     max-width: 150px;
                 }
             }
-
-            
-            
         }    
     }
 
@@ -508,7 +495,6 @@
 
 .modal__complete{
     display: none;
-    // position: absolute;
     position: fixed;
     top: 50%;
     left: 50%;

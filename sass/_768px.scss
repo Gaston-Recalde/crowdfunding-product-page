@@ -104,4 +104,14 @@
             }
         }
     }
+
+    .modal__complete{
+        &__h3{
+            font-size: 24px;
+        }
+    
+        &__p{
+            line-height: 1.8;
+        }
+    }
 }
