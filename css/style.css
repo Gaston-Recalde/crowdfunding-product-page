@@ -130,6 +130,9 @@ body {
   width: 56px;
   height: 56px;
 }
+.main .monitor__card__buttons__button .button:hover {
+  cursor: pointer;
+}
 .main .monitor__card__buttons__button .button-2 {
   background-image: url("../images/icon-bookmark-hover.svg");
   width: 56px;
@@ -253,6 +256,9 @@ body {
 .main .about__card__options__button:hover {
   background-color: hsl(176, 72%, 28%);
   cursor: pointer;
+}
+.main .about__card .button-disabled:hover {
+  cursor: inherit;
 }
 .main .about__card:last-child {
   opacity: 0.5;
