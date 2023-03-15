@@ -15,11 +15,11 @@ This is a solution to the [Crowdfunding product page challenge on Frontend Mento
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./images/crowdfunding.png)
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: (https://capable-treacle-688245.netlify.app/)
 
 ## My process
 
